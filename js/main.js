@@ -36,15 +36,15 @@ class View {
    createComplete(userData) {
       let userElement = this.suggBox.querySelector("li");
       if (!userElement) {
-         this.suggBox.innerHTML = `<li><p class="user-prev-name">${userData.name}</p></li>
-         <li><p class="user-prev-name">${userData.name}</p></li>
-         <li><p class="user-prev-name">${userData.name}</p></li>
-         <li><p class="user-prev-name">${userData.name}</p></li>
-         <li><p class="user-prev-name">${userData.name}</p></li>`;
+         this.suggBox.innerHTML = `<li><button><p class="user-prev-name">${userData.name}</p></button></li>
+         <li><button><p class="user-prev-name">${userData.name}</p></button></li>
+         <li><button><p class="user-prev-name">${userData.name}</p></button></li>
+         <li><button><p class="user-prev-name">${userData.name}</p></button></li>
+         <li><button><p class="user-prev-name">${userData.name}</p></button></li>`;
          userElement = this.suggBox.querySelector("li");
       }
       userElement.style.display = "flex";
-      userElement.innerHTML = `<p class="user-prev-name">${userData.name}</p>`;
+      userElement.innerHTML = `<button><p class="user-prev-name">${userData.name}</p></button>`;
       this.suggBox.append(userElement);
 
       const usersButton = this.createElement("button", "user-list__button");
