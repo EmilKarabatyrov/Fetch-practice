@@ -120,18 +120,20 @@ body {
   display: block;
 }
 
-.search-input .autocomplete li{
+.search-input .autocomplete li {
   border: 1px solid;
   list-style: none;
   padding-left: 13px;
   border: 2px solid rgb(0, 0, 0);
   background: rgb(227, 227, 227);
   height: 44px;
-  font-size: 30px;
   overflow: hidden;
   display: none;
 } 
-
+.search-input .autocomplete button{
+font-size: 30px;
+background: rgb(227, 227, 227);
+}
 .user-list {
   margin-top: 265px;
   overflow: hidden;
