@@ -133,6 +133,8 @@ body {
 .search-input .autocomplete button{
 font-size: 30px;
 background: rgb(227, 227, 227);
+width: 100%;
+text-align: left;
 }
 .user-list {
   margin-top: 265px;
